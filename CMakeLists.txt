@@ -2,9 +2,9 @@
 # 
 # CMake files for CodeAnalysis program
 
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.18)
 
-# project info
+# Project info
 project(CodeAnalysis)
 
 # C++17 standard
@@ -16,11 +16,11 @@ add_executable(CodeAnalysisTest CodeAnalysisTest.cpp CodeAnalysis.cpp xmlWrapper
 # Test FilenameToLanguage
 add_executable(FilenameToLanguageTest FilenameToLanguageTest.cpp FilenameToLanguage.cpp)
 
-# Turn on all warnings, and make warnings errors
+# Turn on all warnings
 if(MSVC)
-    add_compile_options(/W4 /WX)
+    add_compile_options(/W4)
 else()
-    add_compile_options(-Wall -Wextra -pedantic -Werror)
+    add_compile_options(-Wall -Wextra -pedantic)
 endif()
 
 # Run tests

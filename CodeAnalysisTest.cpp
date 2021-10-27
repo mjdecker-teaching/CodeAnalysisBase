@@ -17,14 +17,15 @@ int main() {
         request.source_code = R"(
 if (a < b) a = b;
 )";
-        request.disk_filename  = "";
-        request.entry_filename  = "";
-        request.option_filename = "";
+        request.disk_filename    = "";
+        request.entry_filename   = "";
+        request.option_filename  = "";
         request.source_url       = "";
-        request.option_url      = "";
-        request.option_language = "C++";
+        request.option_url       = "";
+        request.option_language  = "C++";
         request.default_language = "";
-        request.option_loc = -1;
+        request.option_hash      = "";
+        request.option_loc       = -1;
 
         assert(formatAnalysisXML(request) ==
             R"(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
