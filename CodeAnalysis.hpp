@@ -17,6 +17,6 @@
  * @retval Source analysis request in XML format
  * @retval Empty string if invalid
  */
-std::string formatAnalysisXML(const AnalysisRequest& request);
+std::string markupSource(const AnalysisRequest& request);
 
 #endif

@@ -27,7 +27,7 @@ if (a < b) a = b;
         request.option_hash      = "";
         request.option_loc       = -1;
 
-        assert(formatAnalysisXML(request) ==
+        assert(markupSource(request) ==
             R"(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <src:unit xmlns:src="http://srcML.org/src" language="C++">
 if (a &lt; b) a = b;
