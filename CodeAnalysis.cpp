@@ -19,7 +19,7 @@
 std::string formatAnalysisXML(const AnalysisRequest& request) {
 
     // wrap the content with a unit element
-    xmlWrapper wrap("code", "http://srcML.org/code");
+    xmlWrapper wrap("src", "http://srcML.org/src");
     wrap.startElement("unit");
     wrap.addAttribute("language", request.option_language);
     wrap.addContent(request.source_code);
