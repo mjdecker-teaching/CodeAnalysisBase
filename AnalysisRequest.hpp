@@ -10,7 +10,7 @@
 #include <string>
 
 /**
- * source_code      - read in source code
+ * source_code      - source-code text
  * disk_filename    - name of file on disk
  * entry_filename   - current file entry in source archive
  * option_filename  - user specified filename attribute
