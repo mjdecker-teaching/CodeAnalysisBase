@@ -29,7 +29,7 @@ if (a < b) a = b;
 
         assert(formatAnalysisXML(request) ==
             R"(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<code:unit xmlns:code="http://mlcollard.net/code" language="C++">
+<code:unit xmlns:code="http://srcML.org/code" language="C++">
 if (a &lt; b) a = b;
 </code:unit>
 )");
