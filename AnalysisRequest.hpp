@@ -9,6 +9,17 @@
 
 #include <string>
 
+/**
+ * source_code      - read in source code
+ * disk_filename    - name of file on disk
+ * entry_filename   - current file entry in source archive
+ * option_filename  - user specified filename attribute
+ * source_url       - url of source code file/archive
+ * option_url       - user specified url attribute
+ * option_language  - user specified language
+ * default_language - default language to use
+ * option_hash      - user specified hash
+ */
 struct AnalysisRequest {
     std::string source_code;
     std::string disk_filename;
